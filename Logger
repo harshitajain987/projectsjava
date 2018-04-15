@@ -1,0 +1,30 @@
+import java.lang.*;
+import java.io.*;
+public class Threading {
+
+public static void main(string args[]){
+File f=new File("a.txt");
+BufferedWriter bw=null;
+FileWriter fw=null;
+try{
+fw= new FileWriter("b.txt");
+bw=new BufferedWriter(fw);
+}
+catch(IOException e){}
+while(true){
+try{
+     Thread.sleep(5000);
+   }
+catch(InterruptedException ie){}
+try{
+//bw.write(s);
+bw.write(f.length()+"");
+bw.newLine();
+bw.flush();
+System.out.println("Printing");
+}
+catch(IOException io)
+{System.out.println("IO Exception");}
+  }
+ }
+}
