@@ -1,0 +1,6 @@
+This file mentioned is created by harshita jain of 4th semester section A1.
+This program is suitable to run under jvm environment and uses implementation of java extensions and file packages.
+The program works as under:
+When operated it reads the file size and sets the file size into a given file destination and store it in the storage.
+After storing it passes the feedbacks of size in timed intervals of 10 seconds(preset),hence creating log of size of file.
+The log is further stored in a different file consecutively with the functioning of program
